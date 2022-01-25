@@ -1,0 +1,244 @@
+/* Section */
+main {
+    section {
+        .align-image {
+            @include margin(20px, 0px, 20px, 0px);
+            display: flex;
+            justify-content: center;
+        
+            img {
+                width: 474px;
+                height: 506px;
+            }
+        }
+        
+        .text-section {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+
+            h1 {
+                font-family: 'Signika', sans-serif;
+                color: $yellow;
+                font-size: $gamma;
+            }
+
+            h2 {
+                @include margin(15px, 0px, 0px, 0px);
+                font-family: 'Shippori', sans-serif;
+                color: $gray;
+                font-size: $beta;
+            }
+
+            hr {
+                width: 586px;
+                height: 0px;
+                box-sizing: content-box;
+                overflow: visible;
+                border: 1px solid $gray;
+            }
+
+            p {
+                @include margin(15px, 0px, 15px, 0px);
+                width: 596px;
+                font-family: 'Shippori', sans-serif;
+                color: $white;
+                font-size: $alpha;
+            }
+
+            div {
+                .left-h2 {
+                    text-align: left;
+
+                    /* Extend */
+                    @extend h1;
+                }
+
+                .left-p {
+                    text-align: left;
+                }
+            }
+
+            .align-video {
+                @include margin(20px, 0px, 20px, 0px);
+    
+                iframe {
+                    width: 600px;
+                    height: 450px;
+                }
+            }
+        }
+
+        .button-section {
+            display: flex;
+            justify-content: center;
+
+            button {
+                @include margin(0px, 0px, 25px, 0px);
+                width: 77px;
+                background-color: $yellow;
+
+                a {
+                    text-decoration: none;
+                    color: $black;
+                    font-size: $alpha;
+                    font-weight: 500;
+                }
+
+                &:hover {
+                    background: $gray;
+                }
+            }
+        }
+
+        .cards-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            text-align: center;
+            margin: 0 auto;
+
+            .align-card {
+                @include margin(20px, 30px, 20px, 30px);
+                transition: 300ms;
+
+                &:hover {
+                    transform: scale(0.9);
+                }
+
+                .card {
+                    width: 270px;
+                    
+                    img {
+                        height: 170px;
+                    }
+
+                    .card-body {
+                        .card-title {
+                            color: $yellow;
+                            @include margin(0px, 0px, 5px, 0px);
+                        }
+
+                        .card-text {
+                            text-align: left;
+                            color: $gray;
+                            @include margin(0px, 0px, 5px, 0px);
+                        }
+
+                        ul {
+                            padding-left: 0px;
+                            text-align: left;
+                            list-style: none;
+
+                            li {
+                                span {
+                                    color: #00897B;
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+
+                    .card-body.background-black {
+                        background-color: $black;
+
+                        h5, .card-text, ul {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .portfolio-section {
+            @include margin(30px, 0px, 30px, 0px);
+            display: flex;
+            justify-content: center;
+
+            .align-portfolio {
+                @include margin(20px, 40px, 20px, 40px);
+
+                img {
+                    width: 340px;
+                    height: 670px;
+                    border-radius: 10px;
+                }
+            }
+        }
+        
+        .form-section {
+            @include margin(30px, 0px, 30px, 0px);
+            display: flex;
+            justify-content: center;
+
+            .align-form {
+                @include margin(20px, 40px, 20px, 40px);
+
+                form {
+                    fieldset {
+                        width: 875px;
+                        display: flex;
+                        justify-content: center;
+                        background-color: $white;
+                        border: 2px solid $yellow;
+                        border-radius: 10px;
+
+                        .items-center {
+                            display: flex;
+                            justify-content: center;
+                            flex-direction: column;
+
+                            div {
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                            }
+
+                            .text-form {
+                                display: flex;
+                                justify-content: center;
+
+                                h2 {
+                                    @include margin(15px, 0px, 0px, 0px);
+                                    font-family: 'Shippori', sans-serif;
+                                    color: $black;
+                                }
+                            }
+
+                            .align-inputs {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+
+                                div {
+                                    input {
+                                        height: 20px;
+                                        padding: 10px;
+                                    }
+                                }
+
+                                .button-form {
+                                    display: flex;
+                                    justify-content: start;
+                        
+                                    button {
+                                        background-color: $yellow;
+                                        margin-bottom: 25px;
+                        
+                                        a {
+                                            text-decoration: none;
+                                            color: $black;
+                                            font-size: $alpha;
+                                            font-weight: 500;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

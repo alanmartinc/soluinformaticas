@@ -1,0 +1,35 @@
+@import "variables/colors";
+@import "variables/fonts";
+@import "variables/margin";
+
+/* Fonts */
+@font-face {
+    font-family: 'Shippori';
+    src: url('../assets/fonts/ShipporiAntiqueB1-Regular.ttf');
+} 
+
+@font-face {
+    font-family: 'Signika';
+    src: url('../assets/fonts/Signika-VariableFont_wght.ttf');
+} 
+
+/* Globals */
+body {
+    background-color: $black;
+}
+
+main {
+    width: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@import "icons";
+@import "header";
+@import "section";
+@import "footer";
+@import "mediaqueries";

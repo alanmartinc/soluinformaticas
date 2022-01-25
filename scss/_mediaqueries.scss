@@ -1,0 +1,353 @@
+/* Ipads y tablets */
+@media (max-width: 1024px) {
+    /* Body */
+    body {
+        .social-bar {
+            display: none
+        }
+    }
+
+    /* Header */
+    header {
+        @include margin(0px, 0px, 20px, 0px);
+        display: block;
+
+        .navbar {
+            border-radius: 0px;
+        }
+    }
+
+    /* Section */
+    main {
+        section {
+            .align-image {
+                img {
+                    width: 330px;
+                    height: auto;
+                }
+            }
+        
+            .text-section {
+                h1 {
+                    font-size: 24px;
+                }
+        
+                h2 {
+                    font-size: 20px;
+                }
+
+                hr {
+                    width: 490px;
+                }
+        
+                p {
+                    @include margin(15px, 0px, 15px, 0px);
+                    width: 490px;
+                    font-size: 14px;
+                }
+
+                .align-video {
+                    iframe {
+                        width: 500px;
+                        height: 350px;
+                    }
+                }
+            }
+
+            .button-section {
+                button {
+                    width: 67px;
+
+                    a {
+                        font-size: 14px;
+                    }
+                }
+            }
+        
+            .align-portfolio {
+                @include margin(20px, 10px, 20px, 10px);
+        
+                img {
+                    width: 310px;
+                    height: 775px;
+                }
+            }
+        
+            .align-form {
+                form {
+                    fieldset {
+                        width: 650px !important;
+    
+                        .items-center {
+                            .text-form {
+                                h2 {
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    /* Footer */
+    footer {
+        .navbar-footer {
+            li {
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+    
+        .text-footer {
+            font-size: 14px;
+        }
+    }
+}
+
+/* Big mobile */
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        @include margin(0px, 0px, 20px, 0px);
+        display: block;
+    }
+
+    /* Section */
+    main {
+        section {
+            .align-image {
+                img {
+                    width: 279px;
+                    height: auto;
+                }
+            }
+        
+            .text-section {
+                h1 {
+                    font-size: 22px;
+                }
+        
+                h2 {
+                    font-size: 18px;
+                }
+
+                hr {
+                    width: 355px;
+                }
+        
+                p {
+                    @include margin(15px, 0px, 15px, 0px);
+                    width: 344px;
+                    font-size: 12px;
+                }
+
+                .align-video {
+                    iframe {
+                        width: 35px;
+                        height: 250px;
+                    }
+                }
+            }
+
+            .button-section {
+                button {
+                    width: 60px;
+
+                    a {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .cards-section {
+                .align-card {
+                    @include margin(10px, 15px, 10px, 15px);
+    
+                    .card {
+                        width: 212px;
+    
+                        img {
+                            height: 114px;
+                        }
+                    }
+                }
+            }
+        
+            .portfolio-section {
+                flex-direction: column;
+                align-items: center;
+        
+                .align-portfolio {
+                    @include margin(20px, 10px, 20px, 10px);
+                    width: 90%;
+            
+                    img {
+                        width: 100%;
+                        height: 300px;
+                    }
+                }
+            }
+        
+            .align-form {
+                form {
+                    fieldset {
+                        width: 450px !important;
+        
+                        .items-center {
+                            .text-form {
+                                h2 {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Footer */
+    footer {
+        .navbar-footer {
+            li {
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+    
+        .text-footer {
+            font-size: 12px;
+        }
+    }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+    /* Header */
+    header {
+        @include margin(0px, 0px, 20px, 0px);
+        display: block;
+    }
+
+    /* Section */
+    main {
+        section {
+            .align-image {
+                img {
+                    width: 250px;
+                    height: auto;
+                }
+            }
+        
+            .text-section {
+                h1 {
+                    font-size: 20px;
+                }
+        
+                h2 {
+                    font-size: 16px;
+                }
+
+                hr {
+                    width: 298px;
+                }
+        
+                p {
+                    @include margin(15px, 0px, 15px, 0px);
+                    width: 290px;
+                    font-size: 12px;
+                }
+
+                .align-video {
+                    iframe {
+                        width: 300px;
+                        height: 150px;
+                    }
+                }
+            }
+
+            .button-section {
+                button {
+                    width: 60px;
+
+                    a {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .cards-section {    
+                display: flex;
+                flex-direction: column;
+                
+                .align-card {
+                    .card {
+                        width: 212px;
+    
+                        img {
+                            height: 114px;
+                        }
+                    }
+                }
+            }
+        
+            .portfolio-section {
+                flex-direction: column;
+                align-items: center;
+        
+                .align-portfolio {
+                    @include margin(20px, 10px, 20px, 10px);
+                    width: 90%;
+                }
+        
+                img {
+                    width: 100%;
+                    height: 200px;
+                }
+            }
+        
+            .align-form {
+                form {
+                    fieldset {
+                        width: 280px !important;
+                        padding: 10px;
+        
+                        .items-center {
+                            .text-form {
+                                h2 {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Footer */
+    footer {
+        .navbar-footer {
+            li {
+                a {
+                    font-size: 12px;
+                }
+            }
+        }
+    
+        .text-footer {
+            font-size: 10px;
+        }
+    }
+}
+
+/* No resolutions */
+@media (max-width: 320px) {
+    body {
+        display: none;
+    }
+}

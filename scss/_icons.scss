@@ -1,0 +1,52 @@
+.social-bar {
+    position: fixed;
+    right: 0;
+    top: 35%;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+
+    a {
+        img {
+            width: 20px;
+        }
+    }
+
+    .icon {
+        color: $white;
+        text-decoration: none;
+        padding: 0.7rem;
+        display: flex;
+        transition: all 0.5s;
+
+        &:first-child {
+            border-radius: 1rem 0 0 0;
+        }
+
+        &:last-child {
+            border-radius: 0 0 0 1rem;
+        }
+
+        &:hover {
+            padding-right: 3rem;
+            border-radius: 1rem 0 0 1rem;
+            box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.42);
+        }
+    }
+
+    /* Mapa */
+    $redes: (
+        facebook: #3B5998,
+        twitter: #339dc5,
+        instagram: #3f729b,
+    );
+
+    @each $i, $color in $redes {
+        .icon-#{$i} {
+            background: $color;
+        }
+    }
+}
+  
